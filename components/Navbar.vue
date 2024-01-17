@@ -89,7 +89,7 @@ onBeforeUnmount(() => {
         <div>
           <div class="">
             <div class="h-48 w-48 sm:h-56 sm:w-56 overflow-hidden rounded-full border-8 border-secondary-200 shadow-xl">
-                <img src="/images/profile_image1.png" class="p-1 h-full w-full object-cover  rounded-full" alt="author" />
+                <img src="/images/profile_image.png" class="p-1 h-full w-full object-cover  rounded-full" alt="author" />
             </div>  
           </div>
           <h1 class="mt-3 text-4xl font-bold tracking-tight text-secondary-200 sm:text-5xl">
