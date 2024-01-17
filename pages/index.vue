@@ -7,7 +7,7 @@ function handleTheMouseMove(e){
         const y = e.clientY;
         mouseLightRef.value.style.left = (x + 'px');
         mouseLightRef.value.style.top =  (y + 'px');
-        mouseLightRef.value.style.opacity = '1';
+        mouseLightRef.value.style.opacity = '2';
 }
 
 const mouseLightRef = ref('');
@@ -48,7 +48,7 @@ onBeforeUnmount(() => {
 
 
           <!-- APIS integration section-->
-          <ApiIntegrations></ApiIntegrations>
+          <!-- <ApiIntegrations></ApiIntegrations> -->
 
           <!-- Footer -->
           <Footer></Footer>

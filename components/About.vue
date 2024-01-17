@@ -3,30 +3,34 @@ import {ref} from 'vue';
 
 </script>
 <template>
-        <div id="about" class="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24" >
+        <div id="about" class="mb-16 scroll-mt-16 md:mb-24 lg:mb-20 lg:scroll-mt-24" >
           <div
-            class="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-secondary-900/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0"
+            class="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-secondary-900/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0"
           >
-            <h2 class="text-sm font-bold uppercase tracking-widest text-secondary-200 xlg:sr-only" >
-              About
+            <h2 class="text-sm font-bold uppercase tracking-widest text-secondary-200" >
+              About Me
             </h2>
           </div>
           <div>
-            <p class="mb-4">
-              Back in 2012, I decided to try my hand at creating custom Tumblr
-              themes and tumbled head first into the rabbit hole of coding and
-              web development. Fast-forward to today, and I’ve had the privilege
-              of building software for an advertising agency, a start-up, a student-led design studio, and a huge corporation.
+            <h2 class="mb-1 text-sm font-bold capitalize tracking-widest text-secondary-200" >
+              Skilled Frontend Developer
+            </h2>
+            <p class="mb-4 text-justify">
+              Hi there, I am Sher Khan, an experienced Frontend Web Developer based in Fremont, California. With a year of remote collaboration at Axlic, my expertise lies in crafting seamless user experiences using Vue.js and Nuxt.js, complemented by styles such as Tailwind CSS, Bootstrap, and regular CSS. My commitment to continuous learning, attention to detail, and proficiency in problem-solving make me a valuable asset for projects, ensuring excellence in both development and strategic SEO optimization.
             </p>
-            <p class="mb-4">
-              My main focus these days is building products and leading projects
-              for our clients at Upstatement. In my free time I've also released an online video course that covers everything 
-              you need to know to build a web app with the Spotify API.
+
+            <h2 class="mb-1 text-sm font-bold capitalize tracking-widest text-secondary-200" >
+              Academic Background and Professional Integrity
+            </h2>
+            <p class="mb-4 text-justify">
+              I hold a Bachelor's degree in Computer Science from Bacha Khan University in Pakistan, which built a strong foundation for my technical skills. Beyond technology, I believe in maintaining a positive and adaptable approach while working collaboratively with others. My colleagues have taken note of my meticulous coding and effective SEO strategies.
             </p>
-            <p>
-              When I’m not at the computer, I’m usually rock climbing, hanging
-              out with my wife and two cats, or running around Hyrule searching
-              for Korok seeds.
+
+            <h2 class="mb-1 text-sm font-bold capitalize tracking-widest text-secondary-200" >
+              Empowering Digital Excellence Together
+            </h2>
+            <p class="mb-4 text-justify">
+              Excited to help with your projects, I approach things in a well-rounded way, mixing technical know-how, creativity, and a good work attitude. Let's work together to make amazing digital experiences. With my quick learning and teamwork skills, we can take your projects to new levels.
             </p>
           </div>
         </div>

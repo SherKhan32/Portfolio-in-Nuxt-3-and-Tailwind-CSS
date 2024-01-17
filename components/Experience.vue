@@ -4,67 +4,33 @@ import { mdiArrowTopRight, mdiLinkVariant, mdiArrowRight, mdiStar, mdiTrayArrowD
 const experiences = ref([
   {
     id:1,
-    jobTitle: 'Full Stack Developer',
-    position: 'Senior Engineer',
+    jobTitle: 'Front End Web Developer',
+    position: 'Frontend web developer',
     companyName: 'Skyive',
     fromDate: "2022",
     toDate: "present",
     siteLink : 'https://skyive.com',
-    technologies : ['Vue 3', 'Nuxt 3', 'Laravel', 'Javascript', 'TypeScript', 'Tailwind Css'],
+    technologies : ['Vue 3', 'Javascript', 'Tailwind Css', 'Font-awesome-icon', 'Vue3 Toastify', 'MomentJs'],
     usefulLinks : [
-        { name:'Pinia', link:'https://pinia.vuejs.org/' },
-        { name:'Pinia', link:'https://pinia.vuejs.org/' },
-        { name:'Pinia', link:'https://pinia.vuejs.org/' },
+        { name:'Vue 3', link:'https://vuejs.org/guide/introduction.html' },
+        { name:'Nuxt 3', link:'https://nuxt.com/' },
+        { name:'Moment Js', link:'https://https://momentjs.com/' },
     ],
-    description : "Skyive offers innovative digital business cards that serve as customizable and sustainable alternatives to traditional physical cards. These modern cards provide interactivity, cost-effectiveness, and global accessibility, facilitating seamless exchange of contact information."
+    description : "As a Frontend Web Developer at Axlic, I create websites, portals, and landing pages using Vue.js and Nuxt.js. I utilize Tailwind CSS, Bootstrap, and regular CSS for styling, incorporating Vuetify components based on project requirements. I also focus on design updates and bug fixes to maintain optimal website functionality and appearance."
   },
   {
     id:2,
-    jobTitle: 'Full Stack Developer',
-    position: 'Senior Engineer',
+    jobTitle: 'SEO Specialist',
+    position: 'Frontend web developer',
     companyName: 'Skyive',
     fromDate: "2022",
     toDate: "present",
     siteLink : 'https://skyive.com',
-    technologies : ['Vue 3', 'Nuxt 3', 'Laravel', 'Javascript', 'TypeScript', 'Tailwind Css'],
+    technologies : ['Vue 3', 'Nuxt 3', 'Javascript', 'Tailwind Css'],
     usefulLinks : [
-        { name:'Pinia', link:'https://pinia.vuejs.org/' },
-        { name:'Pinia', link:'https://pinia.vuejs.org/' },
-        { name:'Pinia', link:'https://pinia.vuejs.org/' },
+        { name:'Nuxt SEO', link:'https://nuxt.com/modules/seo' },
     ],
-    description : "Skyive offers innovative digital business cards that serve as customizable and sustainable alternatives to traditional physical cards. These modern cards provide interactivity, cost-effectiveness, and global accessibility, facilitating seamless exchange of contact information."
-  },
-  {
-    id:3,
-    jobTitle: 'Full Stack Developer',
-    position: 'Senior Engineer',
-    companyName: 'Skyive',
-    fromDate: "2020",
-    toDate: "2021",
-    siteLink : 'https://skyive.com',
-    technologies : ['Vue 3', 'Nuxt 3', 'Laravel', 'Javascript', 'TypeScript', 'Tailwind Css'],
-    usefulLinks : [
-        { name:'Pinia', link:'https://pinia.vuejs.org/' },
-        { name:'Pinia', link:'https://pinia.vuejs.org/' },
-        { name:'Pinia', link:'https://pinia.vuejs.org/' },
-    ],
-    description : "Skyive offers innovative digital business cards that serve as customizable and sustainable alternatives to traditional physical cards. These modern cards provide interactivity, cost-effectiveness, and global accessibility, facilitating seamless exchange of contact information."
-  },
-  {
-    id:4,
-    jobTitle: 'Full Stack Developer',
-    position: 'Senior Engineer',
-    companyName: 'Skyive',
-    fromDate: "2021",
-    toDate: "2022",
-    siteLink : 'https://skyive.com',
-    technologies : ['Vue 3', 'Nuxt 3', 'Laravel', 'Javascript', 'TypeScript', 'Tailwind Css'],
-    usefulLinks : [
-        { name:'Pinia', link:'https://pinia.vuejs.org/' },
-        { name:'Pinia', link:'https://pinia.vuejs.org/' },
-        { name:'Pinia', link:'https://pinia.vuejs.org/' },
-    ],
-    description : "Skyive offers innovative digital business cards that serve as customizable and sustainable alternatives to traditional physical cards. These modern cards provide interactivity, cost-effectiveness, and global accessibility, facilitating seamless exchange of contact information."
+    description : "As a dedicated SEO Specialist, I strategically optimize websites and landing pages to achieve high Google rankings. I implement comprehensive SEO techniques, including keyword targeting, graphic optimization for enhanced loading speed, and the integration of plugins when necessary. My role involves meticulous keyword research, ensuring our content aligns with specific key terms to maximize online visibility and drive organic traffic."
   },
 ]);
 
@@ -76,10 +42,9 @@ const experiences = ref([
           aria-label="Work experience"
         >
           <div
-            class="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-secondary-900/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0"
-          >
+            class="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-secondary-900/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:pt-10">
             <h2
-              class="text-sm font-bold uppercase tracking-widest text-secondary-200 lg:sr-only"
+              class="text-sm font-bold uppercase tracking-widest text-secondary-200 "
             >
               Experience
             </h2>
@@ -179,7 +144,7 @@ const experiences = ref([
             <div class="mt-12">
               <NuxtLink
                 class="inline-flex items-center leading-tight font-semibold text-secondary-200 group"
-                to="/resume.pdf"
+                to="/web_developer_frontend_sher_khan.pdf"
                 target="_blank"
               >
                 <span>

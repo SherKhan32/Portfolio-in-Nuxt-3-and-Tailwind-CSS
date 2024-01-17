@@ -5,32 +5,50 @@ const projects = ref([
   {
     id:1,
     name: 'Skyive',
-    type: 'Site',
-    image: '/images/project_images/issue_dashboard.jpg',
-    siteLink : 'https://skyive.com',
-    technologies : ['Vue 3', 'Nuxt 3', 'Laravel', 'Javascript', 'TypeScript', 'Tailwind Css'],
-    starRating :{ total: '670', link:'https://pinia.vuejs.org/' },
-    downloadedRating :{ total: '100K', link:'https://pinia.vuejs.org/' },
-    description : "Skyive offers innovative digital business cards that serve as customizable and sustainable alternatives to traditional physical cards. These modern cards provide interactivity, cost-effectiveness, and global accessibility, facilitating seamless exchange of contact information."
+    type: 'Portal',
+    image: '/images/project_images/skyive_portal_image.png',
+    siteLink : 'https://dashboard.skyive.com',
+    technologies : ['Vue 3', 'Javascript', 'Tailwind Css', 'Font-awesome-icon', 'Pinia', 'MomentJs', 'Vue3-Toastify'],
+    usefulLinks : [
+        { name:'Pinia', link:'https://pinia.vuejs.org/' },
+        { name:'Vue3-Toastify', link:'https://www.npmjs.com/package/vue3-toastify' },
+        { name:'MomentJs', link:'https://https://momentjs.com/' },
+        { name:'Vuejs-Paginate-Next', link:'https://www.npmjs.com/package/vuejs-paginate-next' },
+        { name:'Qrcode-Vue3', link:'https://www.npmjs.com/package/qrcode-vue3' },
+    ],
+    starRating :{ total: '200', link:'https://pinia.vuejs.org/' },
+    downloadedRating :{ total: '10K', link:'https://pinia.vuejs.org/' },
+    description : "The digital business card portal I've created features a comprehensive dashboard showing key metrics like total companies, revenue, commissions, and user payments. Admins can efficiently manage user details, assign roles, activate/deactivate companies, and update business cards. The system supports multiple roles, allowing companies to create managers for handling user and company-related tasks. The portal includes functionality for creating and managing social links, QR codes, and super admins can update their profiles. This platform streamlines business card operations for a seamless user experience."
   },
   {
     id:2,
-    name: 'TableTag',
-    type: 'Site',
-    image: '/images/project_images/issue_dashboard.jpg',
+    name: 'Skyive',
+    type: 'Landing Pages',
+    image: '/images/project_images/skyive_landing_pages_image.png',
     siteLink : 'https://skyive.com',
-    technologies : ['Vue 3', 'Nuxt 3', 'Laravel', 'Javascript', 'TypeScript', 'Tailwind Css'],
+    technologies : ['Vue 3', 'Nuxt 3', 'Javascript', 'Tailwind Css'],
     starRating :{ total: '670', link:'https://pinia.vuejs.org/' },
+    usefulLinks : [
+        { name:'Nuxt-Seo-Kit', link:'https://nuxt.com/modules/seo-kit' },
+        { name:'Font-awesome-icon', link:'https://fontawesome.com/docs/web/use-with/vue/' },
+    ],
     downloadedRating :{ total: '100K', link:'https://pinia.vuejs.org/' },
     description : "Skyive offers innovative digital business cards that serve as customizable and sustainable alternatives to traditional physical cards. These modern cards provide interactivity, cost-effectiveness, and global accessibility, facilitating seamless exchange of contact information."
   },
   {
     id:3,
-    name: 'Axlic',
-    type: 'Site',
-    image: '/images/project_images/issue_dashboard.jpg',
-    siteLink : 'https://skyive.com',
-    technologies : ['Vue 3', 'Nuxt 3', 'Laravel', 'Javascript', 'TypeScript', 'Tailwind Css'],
+    name: 'Whipled',
+    type: 'Dashboard',
+    image: '/images/project_images/whipled_image.png',
+    siteLink : 'https://dashboard.whipled.com/',
+    technologies : ['Vue 3', 'Nuxt 3', 'Vue-select', 'Javascript', 'Vue-loading-Overlay', 'Tailwind Css', 'Vue-ChartJs', 'Vue-tel-input'],
+    usefulLinks : [
+        { name:'Pinia', link:'https://pinia.vuejs.org/' },
+        { name:'Vue3-Toastify', link:'https://www.npmjs.com/package/vue3-toastify' },
+        { name:'MomentJs', link:'https://https://momentjs.com/.com/' },
+        { name:'Daisyui', link:'https://daisyui.com/' },
+        { name:'Chart.js', link:'https://www.chartjs.org/' },
+    ],
     starRating :{ total: '670', link:'https://pinia.vuejs.org/' },
     downloadedRating :{ total: '100K', link:'https://pinia.vuejs.org/' },
     description : "Skyive offers innovative digital business cards that serve as customizable and sustainable alternatives to traditional physical cards. These modern cards provide interactivity, cost-effectiveness, and global accessibility, facilitating seamless exchange of contact information."
@@ -95,10 +113,10 @@ const projects = ref([
                           </span
                       ></NuxtLink>
                     </h3>
-                    <p class="mt-2 text-sm leading-normal">
+                    <p class="mt-2 text-sm leading-normal text-justify">
                       {{project.description}}
                     </p>
-                    <NuxtLink
+                    <!-- <NuxtLink
                       class="relative mt-2 inline-flex items-center text-sm font-medium text-secondary-300 hover:text-primary-300 focus-visible:text-primary-300"
                       :to="project.starRating.link"
                       target="_blank"
@@ -115,7 +133,24 @@ const projects = ref([
                     >
                       <svg-icon class="mr-1 h-4 w-4" type="mdi" :path="mdiTrayArrowDown "></svg-icon>
                       <span>{{project.downloadedRating.total}}+ Installs</span>
-                    </NuxtLink>
+                    </NuxtLink> -->
+                    <ul class="mt-2 flex flex-wrap" >
+                      <li
+                        v-for="(usefulLink , index) in project.usefulLinks"
+                        :key="index" 
+                        class="mr-4"
+                      >
+                        <NuxtLink
+                          class="relative mt-2 inline-flex items-center text-sm font-medium text-secondary-300 hover:text-primary-300 focus-visible:text-primary-300"
+                          :to="usefulLink.link"
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          <svg-icon class="mr-1 h-3 w-3" type="mdi" :path="mdiLinkVariant "></svg-icon>
+                          <span>{{ usefulLink.name}}</span>
+                        </NuxtLink>
+                      </li>
+                    </ul>
                     <ul
                       class="mt-2 flex flex-wrap"
                     >
@@ -144,7 +179,7 @@ const projects = ref([
                 </div>
               </li>
             </ul>
-            <div class="mt-12">
+            <!-- <div class="mt-12">
               <NuxtLink
                 class="inline-flex items-center leading-tight font-semibold text-secondary-200 group"
                 aria-label="View Full Project Archive"
@@ -170,7 +205,7 @@ const projects = ref([
                     </span>
                 </span>
               </NuxtLink>
-            </div>
+            </div> -->
           </div>
         </div>
 </template>

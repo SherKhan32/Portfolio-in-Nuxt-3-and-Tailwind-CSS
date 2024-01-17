@@ -1,23 +1,23 @@
 <script setup>
 import { ref } from 'vue'
-import { mdiGithub, mdiInstagram, mdiTwitter, mdiLinkedin } from '@mdi/js';
+import { mdiGithub, mdiInstagram, mdiTwitter, mdiLinkedin,mdiWhatsapp } from '@mdi/js';
 
 const socialLinks = ref([
   {
     name:"GitHub",
-    link : "https://skyive.com/"
+    link : "https://github.com/SherKhan32"
   },
   {
-    name:"Instagram",
-    link : "https://skyive.com/"
+    name:"WhatsApp",
+    link : "tel:+971547880773"
   },
   {
     name:"Twitter",
-    link : "https://skyive.com/"
+    link : "https://Twitter.com/"
   },
   {
     name:"LinkedIn",
-    link : "https://skyive.com/"
+    link : "https://linkedin.com/in/sherkhan32"
   }
 ]);
 
@@ -89,20 +89,19 @@ onBeforeUnmount(() => {
         <div>
           <div class="">
             <div class="h-48 w-48 sm:h-56 sm:w-56 overflow-hidden rounded-full border-8 border-secondary-200 shadow-xl">
-                <img src="/images/user2.png" class="h-full w-full object-cover  rounded-full" alt="author" />
+                <img src="/images/profile_image1.png" class="p-1 h-full w-full object-cover  rounded-full" alt="author" />
             </div>  
           </div>
           <h1 class="mt-3 text-4xl font-bold tracking-tight text-secondary-200 sm:text-5xl">
             <NuxtLink to="/">
-                HBilal Khan
+                Sher Khan
             </NuxtLink>
           </h1>
           <h2 class="mt-3 text-lg font-medium tracking-tight text-secondary-200 sm:text-xl">
-            Full Stack Developer
+            Front End Web Developer
           </h2>
-
-          <p class="mt-4 max-w-xs leading-normal">
-            Adaptable developer proficient in front-end and back-end development.
+          <p class="mt-4 max-w-xs leading-normal"> 
+            Front-end web developer skilled in creating engaging and responsive user interfaces.
           </p>
 
 
@@ -186,8 +185,9 @@ onBeforeUnmount(() => {
               target="_blank"
               rel="noreferrer"
             >
-                <span class="sr-only">Instagram</span>
-                <svg-icon type="mdi" :path="mdiInstagram" size="2rem"></svg-icon>
+                <span class="sr-only">WhatsApp</span>
+                <svg-icon type="mdi" :path="mdiWhatsapp" size="2rem"></svg-icon>
+                <!-- <svg-icon type="mdi" :path="mdiInstagram" size="2rem"></svg-icon> -->
 
             </NuxtLink>
           </li>
